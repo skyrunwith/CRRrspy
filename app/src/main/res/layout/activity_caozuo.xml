@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_actionbar"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/Back_LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/backlinearlayout_background"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/tb_icon_actionbar_back" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="18sp" >
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Title_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:text="操作指引"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.登录"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:id="@+id/textView7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.扫一扫，扫描产品溯源码二维码，显示商品详情"
+
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:id="@+id/textView8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:text="3.点击评论按钮，对商品进行评论"
+        android:id="@+id/textView9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:text="4.点击投诉按钮，对商品进行投诉"
+        android:id="@+id/textView10" />
+</LinearLayout>

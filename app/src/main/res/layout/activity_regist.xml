@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_f6" >
+
+    <RelativeLayout
+        android:id="@+id/comment_rela1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_actionbar" >
+
+        <LinearLayout
+            android:id="@+id/Back_LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/backlinearlayout_background"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/Back_ImageView"
+                android:layout_width="26dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/tb_icon_actionbar_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="注册"
+            android:textSize="18sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <EditText
+            android:id="@+id/Account_EditText"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:hint="账号"
+            android:maxLength="11"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/Pwd_EditText"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:layout_below="@id/Account_EditText"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:maxLength="11"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+            <Button   android:layout_below="@id/Pwd_EditText"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/login_Button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="注册"
+                android:textColor="#fff" />
+    </RelativeLayout>
+
+</RelativeLayout>

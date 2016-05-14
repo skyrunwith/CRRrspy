@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<url>
+    <Node
+        Key="getWeatherInfo"
+        Expires="300"
+        NetType="get"
+        Url="http://www.weather.com.cn/data/sk/101010100.html" />
+    <Node
+        Key="login"
+        Expires="0"
+        NetType="post"
+        Url="http://192.168.1.8:8080/CinemaSystem/rrspy/login"
+        />
+    <!--MockClass = "com.youngheart.mockdata.MockUserInfo"-->
+    <Node
+        Key="getProductByTraceCode"
+        Expires="0"
+        NetType="post"
+        Url="http://192.168.1.8:8080/CinemaSystem/rrspy/getProductByTraceCode"
+        />
+
+    <!--MockClass = "com.youngheart.mockdata.MockTProduct"-->
+
+    <Node
+        Key="getTransport"
+        Expires="5"
+        NetType="get"
+        MockClass = "com.youngheart.mockdata.MockTransport"
+        Url=""
+        />
+
+    <Node
+        Key="getProducer"
+        Expires="0"
+        NetType="post"
+        Url="http://192.168.1.8/CinemaSystem/rrspy/getProducer"
+        />
+    <!--MockClass = "com.youngheart.mockdata.MockProducer"-->
+    <Node
+        Key="getProductRecord"
+        Expires="5"
+        NetType="get"
+        Url="http://192.168.1.8/CinemaSystem/rrspy/getProductRecord"
+        />
+    <!--MockClass = "com.youngheart.mockdata.MockProductRecord"-->
+    <Node
+        Key="getTransportInfo"
+        Expires="5"
+        NetType="get"
+        Url="http://192.168.1.8/CinemaSystem/rrspy/getTransportInfo"
+        />
+<!--
+        MockClass = "com.youngheart.mockdata.wuliu.MockTransportInfo"-->
+    <Node
+        Key="getProduceInfo"
+        Expires="5"
+        NetType="get"
+        Url="http://192.168.1.8/CinemaSystem/rrspy/getProduceInfo"
+        />
+    <!--MockClass = "com.youngheart.mockdata.wuliu.MockProduceInfo"-->
+    <Node
+        Key="getStoreInfo"
+        Expires="5"
+        NetType="get"
+
+        Url="http://192.168.1.8:8080/CinemaSystem/rrspy/getStoreInfo"
+        />
+    MockClass = "com.youngheart.mockdata.wuliu.MockStoreInfo"
+    <Node
+        Key="getMaterial"
+        Expires="5"
+        NetType="get"
+
+        Url="http://192.168.1.8:8080/CinemaSystem/rrspy/getMaterial"
+        />
+    <!--MockClass = "com.youngheart.mockdata.wuliu.MockMaterial"-->
+    <Node
+        Key="getFeed"
+        Expires="5"
+        NetType="get"
+
+        Url="http://192.168.1.8:8080/CinemaSystem/rrspy/getFeed"
+        />
+    <!--MockClass = "com.youngheart.mockdata.wuliu.MockFeed"-->
+
+    <Node
+    Key="addComment"
+    Expires="0"
+    NetType="post"
+    Url="http://192.168.1.8:8080/CinemaSystem/rrspy/addComment"
+    />
+    <Node
+        Key="addTouSu"
+        Expires="0"
+        NetType="post"
+        Url="http://192.168.1.8:8080/CinemaSystem/rrspy/addTouSu"
+        />
+    <Node
+        Key="getTouSus"
+        Expires="0"
+        NetType="post"
+        Url="http://192.168.1.8:8080/CinemaSystem/rrspy/getTouSus"
+        />
+    <Node
+        Key="updatePwd"
+        Expires="0"
+        NetType="post"
+        Url="http://192.168.1.8:8080/CinemaSystem/rrspy/updatePwd"
+        />
+    <Node
+        Key="getNews"
+        Expires="0"
+        NetType="post"
+        Url="http://192.168.1.8:8080/CinemaSystem/rrspy/getNews"
+        />
+    <Node
+        Key="regist"
+        Expires="0"
+        NetType="post"
+        Url="http://192.168.1.8:8080/CinemaSystem/rrspy/regist"
+        />
+
+    <Node
+        Key="addTProduct"
+        Expires="0"
+        NetType="post"
+        Url="http://192.168.1.8:8080/CinemaSystem/rrspy/addTProduct"
+        />
+</url>
+

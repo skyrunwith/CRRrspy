@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandable="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/searchRLL"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/user_kuang_shape" >
+
+        <ImageView
+            android:id="@+id/searchImg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/search" >
+        </ImageView>
+
+        <EditText
+            android:id="@+id/TraceCode_EditText"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/searchImg"
+            android:background="@color/white"
+            android:hint="请输入溯源码" />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/EwmLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@android:color/white" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/EwmImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/erweima" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/EwmImg"
+                android:gravity="center"
+                android:text="扫一扫"
+                android:textColor="#000"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:id="@+id/sptjRl">
+
+            <ImageView
+                android:id="@+id/SptjImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/btn_fjmj" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/SptjImg"
+                android:gravity="center"
+                android:text="商品添加"
+                android:textColor="#000"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/Pljl"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/btn_pljl" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/Pljl"
+                android:gravity="center"
+                android:text="评论记录"
+                android:textColor="#000"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@android:color/white" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/CzzyImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/btn_czzy" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/CzzyImg"
+                android:gravity="center"
+                android:text="操作指引"
+                android:textColor="#000"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/GmdjImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/btn_gmdj" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/GmdjImg"
+                android:gravity="center"
+                android:text="评价商品"
+                android:textColor="#000"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/TsjbImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/btn_tsjb" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/TsjbImg"
+                android:gravity="center"
+                android:text="投诉举报"
+                android:textColor="#000"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:background="#FFE7E7E7" />
+
+    <com.youngheart.ui.ExpandableLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e74c3c"
+        expandable:el_contentLayout="@layout/view_content"
+        expandable:el_headerLayout="@layout/expandview_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:background="#FFE7E7E7" />
+
+    <com.youngheart.ui.ExpandableLayout
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e74c3c"
+        expandable:el_contentLayout="@layout/viewconten2"
+        expandable:el_headerLayout="@layout/expandview_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#FFE7E7E7" />
+
+    <com.youngheart.ui.ExpandableLayout
+        android:id="@+id/three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e74c3c"
+        expandable:el_contentLayout="@layout/viewcontent3"
+        expandable:el_headerLayout="@layout/expandview_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#FFE7E7E7" />
+
+    <com.youngheart.ui.ExpandableLayout
+        android:id="@+id/four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e74c3c"
+        expandable:el_contentLayout="@layout/viewcontent4"
+        expandable:el_headerLayout="@layout/expandview_header" />
+
+</LinearLayout>

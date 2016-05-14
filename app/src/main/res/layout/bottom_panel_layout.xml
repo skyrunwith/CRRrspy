@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.youngheart.fragment.BottomControlPanel xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentBottom="true"
+    android:gravity="center_vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <com.youngheart.fragment.ImageText
+        android:id="@+id/btn_shouye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" />
+
+    <com.youngheart.fragment.ImageText
+        android:id="@+id/btn_wuliu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_shouye" />
+
+    <com.youngheart.fragment.ImageText
+        android:id="@+id/btn_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"  />
+
+</com.youngheart.fragment.BottomControlPanel>

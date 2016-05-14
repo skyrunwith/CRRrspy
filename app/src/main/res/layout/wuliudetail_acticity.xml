@@ -1,0 +1,410 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_actionbar"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/Back_LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/backlinearlayout_background"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/tb_icon_actionbar_back" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="18sp" >
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Title_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <com.youngheart.fragment.BounceScrollView
+        android:id="@+id/BounceScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rel"
+        android:background="#fff"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/LineLightBlue_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/lightblue" />
+
+            <include
+                android:id="@+id/Include"
+                layout="@layout/year_data_detail_layout41_item" />
+
+            <TextView
+                android:id="@+id/CompanyName_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/Include"
+                android:layout_marginLeft="15dp"
+                android:text="浓香型高钙奶"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/LineLightGray_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/CompanyName_TextView"
+                android:layout_marginTop="10dp"
+                android:background="@color/lightgray" />
+
+            <TextView
+                android:id="@+id/type_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LineLightGray_TextView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:text="运输时间"
+                android:textColor="@color/darkgray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/TransportTime_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LineLightGray_TextView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/type_TextView"
+                android:text="牛奶"
+                android:textColor="@color/darkgray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/LinePriceBlow_TextView"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/TransportTime_TextView"
+                android:background="@drawable/u504_line" />
+
+            <TextView
+                android:id="@+id/address_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TransportTime_TextView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:text="运输车辆"
+                android:textColor="@color/darkgray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/CarId_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LinePriceBlow_TextView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/address_TextView"
+                android:text="南京"
+                android:textColor="@color/darkgray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/produce_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address_TextView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:text="车辆类型"
+                android:textColor="@color/darkgray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/CarType_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address_TextView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/produce_TextView"
+                android:text="南京卫岗乳业有限公司"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/wuliuDetail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/produce_TextView"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/lightgray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="物流详情"
+                    android:textColor="@color/lightblue"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/u504_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/DriverCompany"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:text="运输时间"
+                        android:textColor="@color/darkgray"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/DriverCompanyTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@id/DriverCompany"
+                        android:text="牛奶"
+                        android:textColor="@color/darkgray"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/DriverName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:text="驾驶员   "
+                        android:textColor="@color/darkgray"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/DriverNameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@id/DriverName"
+                        android:text="牛奶"
+                        android:textColor="@color/darkgray"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/DriverTel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:text="电       话"
+                        android:textColor="@color/darkgray"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/DriverTelTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@id/DriverTel"
+                        android:text="牛奶"
+                        android:textColor="@color/darkgray"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <!--
+                       <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/DriverGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:text="性       别"
+                        android:textColor="@color/darkgray"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/DriverGenderTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@id/DriverGender"
+                        android:text="牛奶"
+                        android:textColor="@color/darkgray"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+                -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wuliuDetail"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/lightgray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="卖家详情"
+                    android:textColor="@color/lightblue"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/u504_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/SalerShop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:text="商店名称"
+                        android:textColor="@color/darkgray"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/SalerShopTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@id/SalerShop"
+                        android:text="牛奶"
+                        android:textColor="@color/darkgray"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/SalerAdress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:text="地       址"
+                        android:textColor="@color/darkgray"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/SalerAdressTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@id/SalerAdress"
+                        android:text="牛奶"
+                        android:textColor="@color/darkgray"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/SalerTel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:text="电       话"
+                        android:textColor="@color/darkgray"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/SalerTelTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@id/SalerTel"
+                        android:text="牛奶"
+                        android:textColor="@color/darkgray"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </com.youngheart.fragment.BounceScrollView>
+
+</RelativeLayout>

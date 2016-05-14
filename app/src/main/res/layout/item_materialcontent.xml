@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_bottom_corner_no_top_line">
+
+    <TextView
+        android:id="@+id/conten1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="订单编号"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/conten2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="原奶批次编号"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/conten3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="辅料批次编号"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/conten4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="包装批次编号"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/employeeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="进货员"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/conten5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="进货日期"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/conten6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="验货状态"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/conten7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="验货状态"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/conten8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="验货状态"
+        android:textSize="14sp" />
+</TableRow>

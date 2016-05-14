@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/Top_RL"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff" >
+        <ImageView
+            android:id="@+id/Close_ImageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="50dp"
+            android:layout_toRightOf="@id/Close_ImageView"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="#000"
+            android:textSize="18sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/Top_RL"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3" >
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="4" >
+
+            <EditText
+                android:id="@+id/Account_EditText"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/login_username_bg"
+                android:hint="账号"
+                android:paddingLeft="50dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/Pwd_EditText"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:layout_below="@id/Account_EditText"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_password_bg"
+                android:hint="密码"
+                android:paddingLeft="50dp"
+                android:paddingRight="5dp"
+                android:password="true"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/Submit_Button"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:layout_below="@id/Pwd_EditText"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/loginbtn_normal_normal"
+                android:singleLine="true"
+                android:text="登     录"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:layout_below="@id/Submit_Button"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/login_txt_bg"
+                android:orientation="horizontal"
+                android:textColor="#FFF" >
+
+                <TextView
+                    android:id="@+id/Regist_TextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="注册" />
+
+                <TextView
+                    android:id="@+id/ForgetPwd_TextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

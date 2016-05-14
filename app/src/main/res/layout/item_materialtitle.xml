@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/shape_top_corner_no_bottom_line"
+android:id="@+id/rootTableRow"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="订单编号"
+    android:textSize="14sp"
+    android:padding="10dp"
+    android:id="@+id/title1"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="14sp"
+    android:padding="10dp"
+    android:text="原奶批次编号"
+    android:id="@+id/title2"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="14sp"
+    android:padding="10dp"
+    android:text="辅料批次编号"
+    android:id="@+id/title3"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="14sp"
+    android:padding="10dp"
+    android:id="@+id/title4"
+    android:text="包装批次编号" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="14sp"
+    android:padding="10dp"
+    android:text="进货员"
+    android:id="@+id/title5"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="14sp"
+    android:padding="10dp"
+    android:id="@+id/title6"
+    android:text="进货日期" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="14sp"
+    android:padding="10dp"
+    android:text="验货状态"
+    android:id="@+id/title7"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:text="验货状态"
+        android:id="@+id/title8"/>
+</TableRow>
